@@ -4,6 +4,21 @@ if (!isset($_SESSION['username'])) {
     header("refresh:5;url=index.php");
     die("Acesso restrito.");
 }
+$imagens_dir = 'api/imagens/';
+$latest_image = null;
+$latest_time = 0;
+
+if (is_dir($imagens_dir)) {
+    $files = array_diff(scandir($imagens_dir), array('.', '..', 'desktop.ini'));
+    foreach ($files as $file) {
+        $filepath = $imagens_dir . $file;
+        if (is_file($filepath) && filemtime($filepath) > $latest_time) {
+            $latest_time = filemtime($filepath);
+            $latest_image = $filepath;
+        }
+    }
+}
+$hora_imagem = $latest_time ? date("Y-m-d H:i:s", $latest_time) : "N/A";
 ?>
 
 <!doctype html>
@@ -110,7 +125,6 @@ if (!isset($_SESSION['username'])) {
         </div>
     </div>
     <br>
-
     <div class="container">
         <div class="row">
             <div class="col-sm-12">
@@ -151,5 +165,6 @@ if (!isset($_SESSION['username'])) {
             </div>
         </div>
     </div>
+    
     <br>
     <script src="

@@ -1,0 +1,35 @@
+Ligada
+Desligada
+Ligada
+Desligada
+Ligada
+Desligada
+Ligada
+Desligada
+Ligada
+Desligada
+2025-06-19 22:21:02;Movimento Detetado
+2025-06-19 22:21:07;Sem Movimento
+2025-06-19 22:21:17;Movimento Detetado
+2025-06-19 22:21:23;Sem Movimento
+2025-06-19 22:25:20;Movimento Detetado
+2025-06-19 22:25:24;Sem Movimento
+2025-06-19 22:25:34;Movimento Detetado
+2025-06-19 22:25:42;Sem Movimento
+2025-06-19 22:40:48;Movimento Detetado
+2025-06-19 22:40:57;Sem Movimento
+2025-06-19 22:47:06;Movimento Detetado
+2025-06-19 22:47:19;Movimento Detetado
+2025-06-19 22:47:25;Sem Movimento
+2025-06-19 22:54:33;Movimento Detetado
+2025-06-19 22:54:39;Sem Movimento
+2025-06-19 22:54:44;Movimento Detetado
+2025-06-19 22:54:50;Sem Movimento
+2025-06-19 22:55:25;Movimento Detetado
+2025-06-19 22:55:31;Sem Movimento
+2025-06-19 22:56:36;Movimento Detetado
+2025-06-19 22:56:42;Sem Movimento
+2025-06-19 22:58:17;Movimento Detetado
+2025-06-19 22:58:23;Sem Movimento
+2025-06-19 23:01:43;Movimento Detetado
+2025-06-19 23:01:49;Sem Movimento

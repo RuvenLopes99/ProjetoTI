@@ -8,3 +8,4 @@ Ligada
 Desligada
 Ligada
 Desligada
+2025-06-21 18:27:45;Ligado

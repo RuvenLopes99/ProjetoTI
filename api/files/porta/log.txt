@@ -11,3 +11,5 @@ Fechada
 Aberta
 Fechada2025-06-21 13:48:51;Desligado
 2025-06-21 13:50:26;Desligado
+2025-06-21 18:27:42;Desligado
+2025-06-21 18:27:46;Ligado
