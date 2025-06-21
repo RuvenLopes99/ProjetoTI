@@ -9,4 +9,5 @@ Fechada
 Aberta
 Fechada
 Aberta
-Fechada
+Fechada2025-06-21 13:48:51;Desligado
+2025-06-21 13:50:26;Desligado
