@@ -72,22 +72,26 @@ $hora_imagem = $latest_time ? date("Y-m-d H:i:s", $latest_time) : "N/A";
             <?php
             $path = "api/files/";
             $dispositivos = is_dir($path) ? array_diff(scandir($path), array('.', '..')) : [];
-            $atuadores = ['ventilador', 'aspressor', 'porta', 'LuzSBC'];
+            $atuadores = ['ventilador', 'led_pi', 'led_esp','porta'];
 
+            
             foreach ($dispositivos as $device_folder) {
+                if ($device_folder == 'led_pi' || $device_folder == 'led_esp') {
+                continue;
+                }
                 if (is_dir($path . $device_folder)) {
                     $nome = file_exists($path . $device_folder . "/nome.txt") ? trim(file_get_contents($path . $device_folder . "/nome.txt")) : "Nome Indefinido";
                     $valor = file_exists($path . $device_folder . "/valor.txt") ? trim(file_get_contents($path . $device_folder . "/valor.txt")) : "N/A";
                     $hora = file_exists($path . $device_folder . "/hora.txt") ? trim(file_get_contents($path . $device_folder . "/hora.txt")) : "N/A";
                     $imagem = "imagens/" . $device_folder . ".png";
 
-                    // Lógica para a cor do título
+                  
                     $header_style = ''; 
                     if (in_array($device_folder, $atuadores)) {
                         if ($valor == 'Ligado' || $valor == 'Aberta') {
-                            $header_style = 'style="background-color: #28a745; color: white;"'; // Verde
+                            $header_style = 'style="background-color: #28a745; color: white;"'; 
                         } elseif ($valor == 'Desligado' || $valor == 'Fechada') {
-                            $header_style = 'style="background-color: #dc3545; color: white;"'; // Vermelho
+                            $header_style = 'style="background-color: #dc3545; color: white;"';
                         }
                     }
             ?>
@@ -144,6 +148,9 @@ $hora_imagem = $latest_time ? date("Y-m-d H:i:s", $latest_time) : "N/A";
                             <tbody>
                                 <?php
                                 foreach ($dispositivos as $device_folder) {
+                                    if ($device_folder == 'led_pi' || $device_folder == 'led_esp') {
+                                         continue;
+                                    }      
                                     if (is_dir($path . $device_folder)) {
                                         $nome = trim(file_get_contents($path . $device_folder . "/nome.txt"));
                                         $valor = trim(file_get_contents($path . $device_folder . "/valor.txt"));

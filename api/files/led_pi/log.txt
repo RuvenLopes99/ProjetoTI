@@ -13,3 +13,9 @@ Fechada2025-06-19 21:06:08;Ligado
 ESP32_CMD;Ligado
 ESP32_CMD;Ligado
 ESP32;Ligado
+2025-06-21 19:40:56;Ligado
+2025-06-21 19:41:00;Desligado
+2025-06-21 19:41:27;Ligado
+2025-06-21 19:41:39;Desligado
+2025-06-21 19:41:42;Ligado
+2025-06-21 19:41:47;Desligado

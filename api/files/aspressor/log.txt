@@ -11,4 +11,5 @@ Desligado
 Ligado
 Desligado
 Ligado
-Desligado
+Desligado2025-06-21 19:10:57;Ligado
+2025-06-21 19:10:58;Desligado
